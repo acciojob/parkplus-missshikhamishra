@@ -66,6 +66,8 @@ ParkingLot parkingLot = parkingLotRepository1.findById(parkingLotId).get();
                 break;
             }
         }
+
+        spotRepository1.save(spot);
         return spot;
     }
 
