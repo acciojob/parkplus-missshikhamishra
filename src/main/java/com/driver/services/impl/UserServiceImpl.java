@@ -32,5 +32,6 @@ User user= new User();
 user.setName(name);
 user.setPhoneNumber(phoneNumber);
 user.setPassword(password);
+userRepository4.save(user);
     }
 }
