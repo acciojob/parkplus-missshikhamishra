@@ -69,6 +69,9 @@ Reservation reservation = new Reservation();
         user.getReservationList().add(reservation);
         reservation.setUser(user);
         spot.setOccupied(true);
+        spot.getReservationList().add(reservation);
+        reservation.setSpot(spot);
+
         parkingLot.getSpotList().add(spot);
         userRepository3.save(user);
         spotRepository3.save(spot);
